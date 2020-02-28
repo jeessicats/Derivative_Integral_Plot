@@ -12,9 +12,11 @@ from math import sin, cos, exp, pi
 import matplotlib.pyplot as plt
 import sys
 
-def h():
+# Define o incremento a ser aplicado
+def h(): 
     return 0.0001
 
+# Cria o grafico do cosseno
 def graf_cos():
     plt.title("Cosseno", fontsize=16)
 
@@ -32,6 +34,7 @@ def graf_cos():
 
     return 10
 
+# Realiza a derivada do cosseno
 def deri_cos():
     x = int(input("Digite um ponto no qual deseja calcular a derivada de cos(x): "))
     derivada = (-cos(x + 2 * h()) + 8 * cos(x + h()) - 8 * cos(x - h()) + cos(x - 2 * h())) / (12 * h())
@@ -39,6 +42,7 @@ def deri_cos():
 
     return 10
 
+# Realiza a integral do cosseno
 def inte_cos():
     a = int(input("Insira um valor inicial para a integral: "))
     b = int(input("Insira um valor final para a integral: "))
@@ -66,6 +70,7 @@ def inte_cos():
 
     return 10
 
+# Faz o grafico do seno
 def graf_sin():
     plt.title("Seno", fontsize=16)
 
@@ -83,6 +88,7 @@ def graf_sin():
 
     return 10
 
+# Realiza a derivada do seno
 def deri_sin():
     x = int(input("Digite um ponto no qual deseja calcular a derivada de sen(x): "))
     derivada = (-sin(x + 2 * h()) + 8 * sin(x + h()) - 8 * sin(x - h()) + sin(x - 2 * h())) / (12 * h())
@@ -90,6 +96,7 @@ def deri_sin():
 
     return 10
 
+# Faz a integral do seno
 def inte_sin():
     a = int(input("Insira um valor inicial para a integral: "))
     b = int(input("Insira um valor final para a integral: "))
@@ -117,6 +124,7 @@ def inte_sin():
 
     return 10
 
+# Grafico exponencial
 def graf_exp():
     plt.title("Exponencial", fontsize=16)
 
@@ -134,6 +142,7 @@ def graf_exp():
 
     return 10
 
+# Derivada da exponencial
 def deri_exp():
     x = int(input("Digite um ponto no qual deseja calcular a derivada de exp(x): "))
     derivada = (-exp(x + 2 * h()) + 8 * exp(x + h()) - 8 * exp(x - h()) + exp(x - 2 * h())) / (12 * h())
@@ -141,6 +150,7 @@ def deri_exp():
 
     return 10
 
+# Integral da exponencial
 def inte_exp():
     a = int(input("Insira um valor inicial para a integral: "))
     b = int(input("Insira um valor final para a integral: "))
